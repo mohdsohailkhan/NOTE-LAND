@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>NOTE LAND</h1>
+      <hr>
+      <div class="notescontainer">
+        <button id="new_note">NEW NOTE</button>
+      </div>
+    </header>
+
+    <main id="empty">
+        <h2>NO NOTES FOUND</h2>
+        <h5>ADD SOME NOTES FROM THE LEFT COLOUMN </h5>
+    </main>
+
+    <main class="notepad">
+      <input type="text" id="text" placeholder="NOTE TITLE">
+      <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="NOTE DESCRIPTION"></textarea>
+      <button id="create_note">CREATE NOTE</button>
+    </main>
+
+    <footer class="footer">
+      <h1 id="note_title">Note One</h1>
+      <div class="left">
+        <button id="new_task">NEW TASK</button>
+        <button id="delete">DELETE NOTE</button>
+      </div>
+    </footer>
+
+    <section class="sec_display">
+    <div class="display">
+      <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quae odio sit illo modi aspernatur?</p>
+    </div>
+    </section>
+
+    <section id="task">
+      <input type="text" id="create_text" placeholder="TASK NAME">
+      <br>
+      <button id="create_task">CREATE TASK</button>
+    </section>
+
+    <section id="task_list">
+      <h1 id="taskheading">TASK LIST</h1>
+      <ul>
+        <li>Learning the concepts</li>
+        <li>Practicing the Assignments</li>
+        <li>Working on Projects</li>
+      </ul>
+      <hr>
+      <ol>
+        <li>Learning HTML/CSS</li>
+        <li>Project Review</li>
+        <li>Start Learning JavaScript</li>
+      </ol>
+    </section>
+  </body>
+  <script type="module" src="./main.js"></script>
+</html>
